@@ -1,0 +1,14 @@
+{
+    "msgContent": {
+       "html": "Rushikesh",
+       "type": 1,
+       "templateType": "banner",  
+       "title": "CleverTap",
+       "description": "Rushikesh Giri",
+       "kv": {
+           "key1": "value1",
+           "key2": "value2"
+        }
+     },
+     "msgId": "2445_20220215" 
+  }
