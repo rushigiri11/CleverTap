@@ -57,6 +57,7 @@ clevertap.profile.push({
    "Customer Type": "Silver",
    "Prefered Language": "English"
  }
+ 
 });
 
 /**
@@ -98,23 +99,12 @@ clevertap.notificationCallback = function(msg){
       });
 };
 </script>
-<div class="btn"></div>
-<script>
-var btn = document.querySelector('.btn');
-var wrapper = window.parent.document.getElementById('wizParDiv0');
-btn.addEventListener('click', closePopUp);
-function closePopUp()
-{ wrapper.remove(); }
-function submit_pressed() {
-    window.parent.clevertap.raisePopupNotificationClicked(notificationObj)
-}
-</script>
 </head>
 <body>
     <h1> Hello  World! </h1>
     <p> This is a sample text for CleverTap .</p>
     <button onclick="submit_pressed" >Click me!</button>
-    <div class="btn"></div>
+    <div class="btn">CLOSE</div>
 <script>
 var btn = document.querySelector('.btn');
 var wrapper = window.parent.document.getElementById('wizParDiv2');
@@ -122,16 +112,9 @@ btn.addEventListener('click', closePopUp);
 function closePopUp() { wrapper.remove(); }
 
 
+
 </script>
-<div class="btn"></div>
-<script>
-var btn = document.querySelector('.btn');
-var overlay = window.parent.document.getElementById('intentOpacityDiv');
-var wrapper = window.parent.document.getElementById('intentPreview');
-btn.addEventListener('click', closePopUp);
-function closePopUp()
-{ overlay.remove(); wrapper.remove(); }
-</script>
+
 
 <script>
     var notificationObj;
@@ -139,6 +122,7 @@ function closePopUp()
         notificationObj = notificationData;
     };
     </script>
+    
     
 </body>
 
